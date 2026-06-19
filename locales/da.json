@@ -1,0 +1,31 @@
+{
+  "errors": {
+    "device_unreachable": "Kunne ikke hente enhedstypekode – forkert enheds-ID?",
+    "device_unsupported": "Denne app understøtter ikke din enhed (__machineType__)",
+    "identifcation_failed": "Kunne ikke identificere din enhedstype",
+    "connection_lost": "Mistet forbindelse til enheden.",
+    "invalid_ip_address": "IP-adressen er ikke en gyldig IP-adresse."
+  },
+  "unavailable": {
+    "set_ip_address": "Gå til indstillinger for at opdatere IP-adressen."
+  },
+  "pair": {
+    "modbus": {
+      "title": "Nilan Modbus",
+      "subtitle": "Denne enhed understøtter Nilan Modbus-forbindelse",
+      "ipaddress_label": "Indtast IP-adressen for TCP Modbus-enheden:",
+      "port_label": "Indtast TCP-port for Modbus-enheden (standard: 502):",
+      "unitid_label_cts602": "Indtast CTS602 enheds-ID (standard: 30):",
+      "unitid_label_cts700": "Indtast CTS700 enheds-ID (standard: 1):"
+    },
+    "externalheater_label": "Brug ekstern varmer, f.eks. solpaneler",
+    "submit": "Send",
+    "valid_ip_address": "Indtast en gyldig IP-adresse (xxx.xxx.xxx.xxx)",
+    "connection_refused": "Forbindelsen blev afvist (__uri__)",
+    "connection_unreachable": "Forbindelsen er uden for rækkevidde (__uri__)"
+  },
+  "warnings": {
+    "alarm": "Varmepumpealarm",
+    "filter_change": "Filterskift"
+  }
+}

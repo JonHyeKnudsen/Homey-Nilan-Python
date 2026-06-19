@@ -1,0 +1,101 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Connection",
+      "da": "Forbindelse"
+    },
+    "children": [
+      {
+        "id": "device-ip",
+        "type": "text",
+        "label": {
+          "en": "Port",
+          "da": "Port"
+        },
+        "value": "0.0.0.0",
+        "hint": {
+          "en": "Specify the ip of the Nilan Modbus adapter",
+          "da": "Angiv IP-adressen for Nilan Modbus-adapteren"
+        }
+      },
+      {
+        "id": "device-port",
+        "type": "number",
+        "label": {
+          "en": "Port",
+          "da": "Port"
+        },
+        "value": 502,
+        "min": 1,
+        "max": 65534,
+        "hint": {
+          "en": "TCP Port for modbus communication. Default: 502",
+          "da": "TCP-port til Modbus-kommunikation. Standard: 502"
+        }
+      },
+      {
+        "id": "device-id",
+        "type": "number",
+        "label": {
+          "en": "Unit ID",
+          "da": "Enheds-ID"
+        },
+        "value": 1,
+        "min": 1,
+        "max": 8,
+        "hint": {
+          "en": "Modbus unit ID for Nilan. Default: 1",
+          "da": "Modbus enheds-ID for Nilan. Standard: 1"
+        }
+      },
+      {
+        "id": "polling-interval",
+        "type": "number",
+        "label": {
+          "en": "Polling interval",
+          "da": "Pollingsinterval"
+        },
+        "value": 20,
+        "min": 10,
+        "max": 300,
+        "units": {
+          "en": "s",
+          "da": "s"
+        },
+        "hint": {
+          "en": "Polling interval (seconds)",
+          "da": "Pollingsinterval (sekunder)"
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Reporting",
+      "da": "Rapportering"
+    },
+    "children": [
+      {
+        "id": "temp-report-interval",
+        "type": "number",
+        "label": {
+          "en": "Temperature report interval",
+          "da": "Temperaturrapport-interval"
+        },
+        "value": 30,
+        "min": 10,
+        "max": 600,
+        "units": {
+          "en": "s",
+          "da": "s"
+        },
+        "hint": {
+          "en": "Time interval between consecutive temperature reports",
+          "da": "Tidsinterval mellem temperaturrapporter"
+        }
+      }
+    ]
+  }
+]

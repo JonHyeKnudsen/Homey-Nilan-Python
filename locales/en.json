@@ -1,0 +1,31 @@
+{
+  "errors": {
+    "device_unreachable": "Unable to retrieve device type code, incorrect unit id?",
+    "device_unsupported": "This app does not support your device (__machineType__)",
+    "identifcation_failed": "Unable to identify your device type",
+    "connection_lost": "Lost connection to device.",
+    "invalid_ip_address": "IP address does not qualify as valid ip address."
+  },
+  "unavailable": {
+    "set_ip_address": "Go to settings to update the IP address."
+  },
+  "pair": {
+    "modbus": {
+      "title": "Nilan Modbus",
+      "subtitle": "This device supports Nilan Modbus connection",
+      "ipaddress_label": "Enter the IP address for the TCP ModBus device:",
+      "port_label": "Enter TCP port of ModBus device (default: 502):",
+      "unitid_label_cts602": "Enter CTS602 Unit ID (default: 30):",
+      "unitid_label_cts700": "Enter CTS700 Unit ID (default: 1):"
+    },
+    "externalheater_label": "Use external heater, such as solar panels",
+    "submit": "Submit",
+    "valid_ip_address": "Enter a valid IP address (xxx.xxx.xxx.xxx)",
+    "connection_refused": "Connection is refused (__uri__)",
+    "connection_unreachable": "Connection is unreachable (__uri__)"
+  },
+  "warnings": {
+    "alarm": "Heat pump alarm",
+    "filter_change": "Filter change"
+  }
+}

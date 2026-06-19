@@ -1,0 +1,175 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Connection",
+      "da": "Forbindelse"
+    },
+    "children": [
+      {
+        "id": "device-ip",
+        "type": "text",
+        "label": {
+          "en": "IP address",
+          "da": "IP-adresse"
+        },
+        "value": "0.0.0.0",
+        "hint": {
+          "en": "Specify the ip address of the Nilan Modbus adapter",
+          "da": "Angiv IP-adressen for Nilan Modbus-adapteren"
+        }
+      },
+      {
+        "id": "device-port",
+        "type": "number",
+        "label": {
+          "en": "Port",
+          "da": "Port"
+        },
+        "value": 502,
+        "min": 1,
+        "max": 65534,
+        "hint": {
+          "en": "TCP Port for modbus communication. Default: 502",
+          "da": "TCP-port til Modbus-kommunikation. Standard: 502"
+        }
+      },
+      {
+        "id": "device-id",
+        "type": "number",
+        "label": {
+          "en": "Unit ID",
+          "da": "Enheds-ID"
+        },
+        "value": 30,
+        "min": 1,
+        "max": 254,
+        "hint": {
+          "en": "Modbus unit ID for Nilan. Default: 30",
+          "da": "Modbus enheds-ID for Nilan. Standard: 30"
+        }
+      },
+      {
+        "id": "polling-interval",
+        "type": "number",
+        "label": {
+          "en": "Polling interval",
+          "da": "Pollingsinterval"
+        },
+        "value": 20,
+        "min": 10,
+        "max": 300,
+        "units": {
+          "en": "s",
+          "da": "s"
+        },
+        "hint": {
+          "en": "Polling interval (seconds)",
+          "da": "Pollingsinterval (sekunder)"
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Reporting",
+      "da": "Rapportering"
+    },
+    "children": [
+      {
+        "id": "temp-report-interval",
+        "type": "number",
+        "label": {
+          "en": "Temperature report interval",
+          "da": "Temperaturrapport-interval"
+        },
+        "value": 30,
+        "min": 10,
+        "max": 600,
+        "units": {
+          "en": "s",
+          "da": "s"
+        },
+        "hint": {
+          "en": "Time interval between consecutive temperature reports",
+          "da": "Tidsinterval mellem temperaturrapporter"
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Visible sensors",
+      "da": "Synlige sensorer"
+    },
+    "children": [
+      {
+        "id": "show-compressor-state",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show compressor",
+          "da": "Vis kompressor"
+        },
+        "hint": {
+          "en": "Show the compressor sensor on the device card",
+          "da": "Vis kompressorsensoren på enhedskortet"
+        }
+      },
+      {
+        "id": "show-hot-water-state",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show water heating",
+          "da": "Vis vandopvarmning"
+        },
+        "hint": {
+          "en": "Show the water heating sensor on the device card",
+          "da": "Vis vandopvarmningssensoren på enhedskortet"
+        }
+      },
+      {
+        "id": "show-electric-heater",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show electric heater",
+          "da": "Vis elvarmer"
+        },
+        "hint": {
+          "en": "Show the electric heater sensor on the device card",
+          "da": "Vis elvarmer-sensoren på enhedskortet"
+        }
+      },
+      {
+        "id": "show-external-heater",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show external heater",
+          "da": "Vis ekstern varmer"
+        },
+        "hint": {
+          "en": "Show the external heater sensor on the device card",
+          "da": "Vis ekstern varmer-sensoren på enhedskortet"
+        }
+      },
+      {
+        "id": "show-waterpump-state",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show waterpump",
+          "da": "Vis vandpumpe"
+        },
+        "hint": {
+          "en": "Show the waterpump sensor on the device card",
+          "da": "Vis vandpumpesensoren på enhedskortet"
+        }
+      }
+    ]
+  }
+]

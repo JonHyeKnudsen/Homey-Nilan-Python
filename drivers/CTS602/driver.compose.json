@@ -1,0 +1,1184 @@
+{
+  "id": "CTS602",
+  "name": {
+    "en": "CTS602",
+    "da": "CTS602"
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "class": "heatpump",
+  "capabilities": [],
+  "capabilitiesOptions": {
+    "target_temperature": {
+      "title": {
+        "en": "Indoor",
+        "da": "Indendørs"
+      },
+      "min": 5,
+      "max": 30,
+      "icon": "../../assets/icons/target_temperature_level.svg"
+    },
+    "fan_mode.ventilation": {
+      "title": {
+        "en": "Fan speed request",
+        "da": "Ønsket ventilatorhastighed"
+      },
+      "desc": {
+        "en": "User ventilation step select",
+        "da": "Brugervalg af ventilationstrin"
+      },
+      "values": [
+        {
+          "id": "1",
+          "title": {
+            "en": "Step 1",
+            "da": "Trin 1"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Step 2",
+            "da": "Trin 2"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Step 3",
+            "da": "Trin 3"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Step 4",
+            "da": "Trin 4"
+          }
+        }
+      ],
+      "insights": false
+    },
+    "measure_temperature": {
+      "title": {
+        "en": "Indoor",
+        "da": "Indendørs"
+      },
+      "insights": false
+    },
+    "measure_temperature.indoor": {
+      "title": {
+        "en": "Indoor",
+        "da": "Indendørs"
+      },
+      "insights": false
+    },
+    "target_temperature.water": {
+      "title": {
+        "en": "Hot water",
+        "da": "Varmt vand"
+      },
+      "min": 5,
+      "max": 65,
+      "insights": false,
+      "icon": "../../assets/icons/target_temperature_level.svg"
+    },
+    "measure_temperature.water": {
+      "title": {
+        "en": "Hot water",
+        "da": "Varmt vand"
+      },
+      "insights": false
+    },
+    "target_temperature.ek": {
+      "title": {
+        "en": "EK",
+        "da": "EK"
+      },
+      "min": 5,
+      "max": 60,
+      "insights": false,
+      "icon": "../../assets//icons/target_temperature_min.svg"
+    },
+    "fan_speed.inlet1": {
+      "title": {
+        "en": "Inlet step 1 speed",
+        "da": "Indblæsningstrin 1 hastighed"
+      },
+      "desc": {
+        "en": "Inlet step 1 speed setup",
+        "da": "Opsætning af indblæsningstrin 1"
+      },
+      "insights": false
+    },
+    "fan_speed.inlet2": {
+      "title": {
+        "en": "Inlet step 2 speed",
+        "da": "Indblæsningstrin 2 hastighed"
+      },
+      "desc": {
+        "en": "Inlet step 2 speed setup",
+        "da": "Opsætning af indblæsningstrin 2"
+      },
+      "insights": false
+    },
+    "fan_speed.inlet3": {
+      "title": {
+        "en": "Inlet step 3 speed",
+        "da": "Indblæsningstrin 3 hastighed"
+      },
+      "desc": {
+        "en": "Inlet step 4 speed setup",
+        "da": "Opsætning af indblæsningstrin 4"
+      },
+      "insights": false
+    },
+    "fan_speed.inlet4": {
+      "title": {
+        "en": "Inlet step 4 speed",
+        "da": "Indblæsningstrin 4 hastighed"
+      },
+      "desc": {
+        "en": "Inlet step 4 speed setup",
+        "da": "Opsætning af indblæsningstrin 4"
+      },
+      "insights": false
+    },
+    "fan_speed.exhaust1": {
+      "title": {
+        "en": "Exhaust step 1 speed",
+        "da": "Udsugningstrin 1 hastighed"
+      },
+      "desc": {
+        "en": "Exhaust step 1 speed setup",
+        "da": "Opsætning af udsugningstrin 1"
+      },
+      "insights": false
+    },
+    "fan_speed.exhaust2": {
+      "title": {
+        "en": "Exhaust step 2 speed",
+        "da": "Udsugningstrin 2 hastighed"
+      },
+      "desc": {
+        "en": "Exhaust step 2 speed setup",
+        "da": "Opsætning af udsugningstrin 2"
+      },
+      "insights": false
+    },
+    "fan_speed.exhaust3": {
+      "title": {
+        "en": "Exhaust step 3 speed",
+        "da": "Udsugningstrin 3 hastighed"
+      },
+      "desc": {
+        "en": "Exhaust step 3 speed setup",
+        "da": "Opsætning af udsugningstrin 3"
+      },
+      "insights": false
+    },
+    "fan_speed.exhaust4": {
+      "title": {
+        "en": "Exhaust step 4 speed",
+        "da": "Udsugningstrin 4 hastighed"
+      },
+      "desc": {
+        "en": "Exhaust step 4 speed setup",
+        "da": "Opsætning af udsugningstrin 4"
+      },
+      "insights": false
+    },
+    "pump_mode.run": {
+      "title": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "desc": {
+        "en": "On/off state",
+        "da": "Tændt/slukket-tilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Off",
+            "da": "Slukket"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "On",
+            "da": "Tændt"
+          }
+        }
+      ]
+    },
+    "pump_mode.mode": {
+      "title": {
+        "en": "Mode",
+        "da": "Tilstand"
+      },
+      "desc": {
+        "en": "Operation mode",
+        "da": "Driftstilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Off",
+            "da": "Slukket"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Heat",
+            "da": "Varme"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Cool",
+            "da": "Køl"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Auto",
+            "da": "Auto"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Service",
+            "da": "Service"
+          }
+        }
+      ]
+    },
+    "pump_mode.air_exchange": {
+      "title": {
+        "en": "Air exchange mode",
+        "da": "Luftudskiftningstilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Energy",
+            "da": "Energi"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Comfort",
+            "da": "Comfort"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Comfort + water",
+            "da": "Comfort + vand"
+          }
+        }
+      ]
+    },
+    "pump_mode.power_save": {
+      "title": {
+        "en": "Power save",
+        "da": "Strømsparetilstand"
+      },
+      "desc": {
+        "en": "Power saving mode",
+        "da": "Strømsparetilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Disabled",
+            "da": "Deaktiveret"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Enabled",
+            "da": "Aktiveret"
+          }
+        }
+      ]
+    },
+    "compressor_state": {
+      "titleTrue": {
+        "en": "On",
+        "da": "Tændt"
+      },
+      "titleFalse": {
+        "en": "Off",
+        "da": "Slukket"
+      },
+      "insightsTitleTrue": {
+        "en": "On",
+        "da": "Tændt"
+      },
+      "insightsTitleFalse": {
+        "en": "Off",
+        "da": "Slukket"
+      },
+      "insights": true
+    },
+    "electricheater": {
+      "type": "enum",
+      "uiComponent": "sensor",
+      "title": {
+        "en": "Electric heating",
+        "da": "El-opvarmning"
+      },
+      "desc": {
+        "en": "Electric heating level",
+        "da": "El-opvarmningsniveau"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Off",
+            "da": "Slukket"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Level 1",
+            "da": "Niveau 1"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Level 2",
+            "da": "Niveau 2"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Level 3",
+            "da": "Niveau 3"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Level 4",
+            "da": "Niveau 4"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Level 5",
+            "da": "Niveau 5"
+          }
+        },
+        {
+          "id": "6",
+          "title": {
+            "en": "Level 6",
+            "da": "Niveau 6"
+          }
+        },
+        {
+          "id": "7",
+          "title": {
+            "en": "Level 7",
+            "da": "Niveau 7"
+          }
+        }
+      ],
+      "insights": true,
+      "icon": "../../assets/icons/power.svg"
+    },
+    "waterpump_state": {
+      "title": {
+        "en": "Circulation pump",
+        "da": "Cirkulationspumpe"
+      },
+      "desc": {
+        "en": "EK Circulation pump state",
+        "da": "EK cirkulationspumpetilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Off",
+            "da": "Slukket"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "On",
+            "da": "Tændt"
+          }
+        }
+      ]
+    },
+    "operational_state.air_exchange": {
+      "title": {
+        "en": "Air exchange mode",
+        "da": "Luftudskiftningstilstand"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Energy",
+            "da": "Energi"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Comfort",
+            "da": "Comfort"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Comfort + water",
+            "da": "Comfort + vand"
+          }
+        }
+      ]
+    },
+    "measure_temperature.water_current": {
+      "title": {
+        "en": "Water",
+        "da": "Vand"
+      },
+      "insights": false
+    },
+    "measure_temperature.ek_supply": {
+      "title": {
+        "en": "EK supply",
+        "da": "EK fremløb"
+      },
+      "insights": false
+    },
+    "measure_temperature.ek_return": {
+      "title": {
+        "en": "EK return",
+        "da": "EK retur"
+      },
+      "insights": false
+    },
+    "measure_temperature.outdoor": {
+      "title": {
+        "en": "Outdoor",
+        "da": "Udendørs"
+      },
+      "insights": false
+    },
+    "measure_temperature.controller": {
+      "title": {
+        "en": "Controller",
+        "da": "Styreenhed"
+      },
+      "insights": false
+    },
+    "measure_temperature.intake": {
+      "title": {
+        "en": "Intake",
+        "da": "Indtag"
+      },
+      "insights": false
+    },
+    "measure_temperature.inlet_before": {
+      "title": {
+        "en": "Inlet before heater",
+        "da": "Indblæsning før varmer"
+      },
+      "insights": false
+    },
+    "measure_temperature.exhaust": {
+      "title": {
+        "en": "Exhaust",
+        "da": "Udsugning"
+      },
+      "insights": false
+    },
+    "measure_temperature.outlet": {
+      "title": {
+        "en": "Outlet",
+        "da": "Udløb"
+      },
+      "insights": false
+    },
+    "measure_temperature.cond": {
+      "title": {
+        "en": "Condenser",
+        "da": "Kondensator"
+      },
+      "insights": false
+    },
+    "measure_temperature.evap": {
+      "title": {
+        "en": "Evaporator",
+        "da": "Fordamper"
+      },
+      "insights": false
+    },
+    "measure_temperature.inlet_after": {
+      "title": {
+        "en": "Inlet after heater",
+        "da": "Indblæsning efter varmer"
+      },
+      "insights": false
+    },
+    "measure_temperature.heater": {
+      "title": {
+        "en": "Heater",
+        "da": "Varmer"
+      },
+      "insights": false
+    },
+    "measure_temperature.extern": {
+      "title": {
+        "en": "External sensor",
+        "da": "Ekstern sensor"
+      },
+      "insights": false
+    },
+    "measure_temperature.water_top": {
+      "title": {
+        "en": "Hot water top",
+        "da": "Varmt vand (top)"
+      },
+      "insights": false
+    },
+    "measure_temperature.water_bottom": {
+      "title": {
+        "en": "Hot water bottom",
+        "da": "Varmt vand (bund)"
+      },
+      "insights": false
+    },
+    "measure_temperature.panel": {
+      "title": {
+        "en": "User panel",
+        "da": "Brugerpanel"
+      },
+      "insights": false
+    },
+    "measure_temperature.aux": {
+      "title": {
+        "en": "AUX temperature",
+        "da": "AUX-temperatur"
+      },
+      "insights": false
+    },
+    "fanstep_enum.ventilation": {
+      "title": {
+        "en": "Ventilation set point",
+        "da": "Ventilations-setpunkt"
+      },
+      "desc": {
+        "en": "Actual ventilation step set point",
+        "da": "Aktuelt ventilationstrin (setpunkt)"
+      },
+      "values": [
+        {
+          "id": "1",
+          "title": {
+            "en": "1",
+            "da": "1"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "2",
+            "da": "2"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "3",
+            "da": "3"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "4",
+            "da": "4"
+          }
+        }
+      ],
+      "insights": false
+    },
+    "fanstep.inlet": {
+      "title": {
+        "en": "Actual ventilation step",
+        "da": "Aktuelt ventilationstrin"
+      },
+      "desc": {
+        "en": "Actual inlet fan speed step",
+        "da": "Aktuelt indblæsningsventilatortrin"
+      },
+      "insights": false
+    },
+    "fanstep.exhaust": {
+      "title": {
+        "en": "Actual exhaust ventilation step",
+        "da": "Aktuelt udsugningstrin"
+      },
+      "desc": {
+        "en": "Actual exhaust fan speed step",
+        "da": "Aktuelt udsugningsventilatortrin"
+      },
+      "insights": false
+    },
+    "fanspeed.exhaust": {
+      "title": {
+        "en": "Exhaust fan",
+        "da": "Udsugningsventilator"
+      },
+      "desc": {
+        "en": "Exhaust fan speed",
+        "da": "Udsugningsventilatorhastighed"
+      }
+    },
+    "fanspeed.inlet": {
+      "title": {
+        "en": "Inlet fan",
+        "da": "Indblæsningsventilator"
+      },
+      "desc": {
+        "en": "Inlet fan speed",
+        "da": "Indblæsningsventilatorhastighed"
+      }
+    },
+    "capacity.airheat": {
+      "title": {
+        "en": "Air heater",
+        "da": "Luftvarmer"
+      },
+      "desc": {
+        "en": "Air heater capacity",
+        "da": "Luftvarmerkapacitet"
+      },
+      "insights": false
+    },
+    "capacity.cenheat": {
+      "title": {
+        "en": "Central heater",
+        "da": "Centralvarmer"
+      },
+      "desc": {
+        "en": "Central heater capacity",
+        "da": "Centralvarmerkapacitet"
+      },
+      "insights": false
+    },
+    "capacity.compressor": {
+      "title": {
+        "en": "Compressor",
+        "da": "Kompressor"
+      },
+      "desc": {
+        "en": "Compressor capacity",
+        "da": "Kompressorkapacitet"
+      },
+      "insights": false
+    },
+    "filter_days.since": {
+      "title": {
+        "en": "Filter days since",
+        "da": "Dage siden filterskift"
+      },
+      "desc": {
+        "en": "Days since last filter change",
+        "da": "Dage siden seneste filterskift"
+      },
+      "insights": false
+    },
+    "filter_days.left": {
+      "title": {
+        "en": "Filter days left",
+        "da": "Dage tilbage til filterskift"
+      },
+      "desc": {
+        "en": "Days left to filter change",
+        "da": "Dage tilbage til filterskift"
+      },
+      "insights": false
+    },
+    "alarm_generic.filter": {
+      "title": {
+        "en": "Filter alarm",
+        "da": "Filteralarm"
+      },
+      "desc": {
+        "en": "Filter needs replacing",
+        "da": "Filter skal udskiftes"
+      },
+      "insightsTitleTrue": {
+        "en": "Filter needs replacing",
+        "da": "Filter skal udskiftes"
+      },
+      "insightsTitleFalse": {
+        "en": "Filter state is OK",
+        "da": "Filtertilstand er OK"
+      }
+    },
+    "alarm_nilan.id1": {
+      "title": {
+        "en": "Alarm type",
+        "da": "Alarmtype"
+      }
+    },
+    "alarm_nilan.id2": {
+      "title": {
+        "en": "Alarm #2 type",
+        "da": "Alarmtype #2"
+      }
+    },
+    "alarm_nilan.id3": {
+      "title": {
+        "en": "Alarm #3 type",
+        "da": "Alarmtype #3"
+      }
+    },
+    "alarm_pump_device": {
+      "title": {
+        "en": "Device alarm",
+        "da": "Enhedsalarm"
+      },
+      "desc": {
+        "en": "Heat pump alarm",
+        "da": "Varmepumpealarm"
+      },
+      "insightsTitleTrue": {
+        "en": "Heat pump reported malfunction",
+        "da": "Varmepumpen rapporterede en fejl"
+      },
+      "insightsTitleFalse": {
+        "en": "Heat pump is functioning without problems",
+        "da": "Varmepumpen fungerer uden problemer"
+      }
+    },
+    "cts602_type": {
+      "title": {
+        "en": "Type",
+        "da": "Type"
+      }
+    },
+    "firmware_version": {
+      "title": {
+        "en": "Firmware version",
+        "da": "Firmwareversion"
+      }
+    },
+    "insights_number.compressor_state": {
+      "title": {
+        "en": "Compressor",
+        "da": "Kompressor"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = on",
+        "da": "0 = slukket, 1 = tændt"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    "insights_number.hot_water_state": {
+      "title": {
+        "en": "Water heater",
+        "da": "Vandvarmer"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = heating, 2 = electric heating",
+        "da": "0 = slukket, 1 = opvarmning, 2 = el-opvarmning"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 2,
+      "step": 1
+    },
+    "insights_number.externalheater": {
+      "title": {
+        "en": "External heater",
+        "da": "Ekstern varmer"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = on",
+        "da": "0 = slukket, 1 = tændt"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    "insights_number.waterpump_state": {
+      "title": {
+        "en": "Circulation pump",
+        "da": "Cirkulationspumpe"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = on",
+        "da": "0 = slukket, 1 = tændt"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    "insights_number.defrosting_state": {
+      "title": {
+        "en": "Defrosting",
+        "da": "Afrimning"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = on",
+        "da": "0 = slukket, 1 = tændt"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    "insights_number.electricheater": {
+      "title": {
+        "en": "Electric heater",
+        "da": "Elvarmer"
+      },
+      "desc": {
+        "en": "0 = off, >= = heating power level",
+        "da": "0 = slukket, >= = varmeniveau"
+      },
+      "units": {
+        "en": "Level",
+        "da": "Niveau"
+      },
+      "hint": {
+        "en": "0 = off, >0 = heating power level",
+        "da": "0 = slukket, >0 = varmeniveau"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 7,
+      "step": 1
+    },
+    "insights_number.run_state": {
+      "title": {
+        "en": "Run",
+        "da": "Kører"
+      },
+      "units": {
+        "en": "State",
+        "da": "Tilstand"
+      },
+      "hint": {
+        "en": "0 = off, 1 = on",
+        "da": "0 = slukket, 1 = tændt"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    "insights_number.ventilation": {
+      "title": {
+        "en": "Ventilation",
+        "da": "Ventilation"
+      },
+      "units": {
+        "en": "Step",
+        "da": "Trin"
+      },
+      "decimals": 0,
+      "min": 0,
+      "max": 4,
+      "step": 1
+    },
+    "insights_dec_number.air_heater_capacity": {
+      "title": {
+        "en": "Air heater capacity",
+        "da": "Luftvarmerkapacitet"
+      },
+      "units": "%",
+      "decimals": 1,
+      "min": 0,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.central_heater_capacity": {
+      "title": {
+        "en": "Central heater capacity",
+        "da": "Centralvarmerkapacitet"
+      },
+      "units": "%",
+      "decimals": 1,
+      "min": 0,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.compressor_capacity": {
+      "title": {
+        "en": "Compressor capacity",
+        "da": "Kompressorkapacitet"
+      },
+      "units": "%",
+      "decimals": 1,
+      "min": 0,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T0_controller": {
+      "title": {
+        "en": "T0 Controller board temperature",
+        "da": "T0 Styreprintets temperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T1_intake": {
+      "title": {
+        "en": "T1 Intake temperature",
+        "da": "T1 Indtagstemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T2_inlet": {
+      "title": {
+        "en": "T2 Inlet temperature (before heater)",
+        "da": "T2 Indblæsningstemperatur (før varmer)"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T3_exhaust": {
+      "title": {
+        "en": "T3 Exhaust temperature",
+        "da": "T3 Udsugningstemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T4_outlet": {
+      "title": {
+        "en": "T4 Outlet temperature",
+        "da": "T4 Afkasttemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T5_cond": {
+      "title": {
+        "en": "T5 Condenser temperature",
+        "da": "T5 Kondensatortemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T6_evap": {
+      "title": {
+        "en": "T6 Evaporator temperature",
+        "da": "T6 Fordampertemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T7_inlet": {
+      "title": {
+        "en": "T7 Inlet temperature (after heater)",
+        "da": "T7 Indblæsningstemperatur (efter varmer)"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T8_outdoor": {
+      "title": {
+        "en": "T8 Outdoor temperature",
+        "da": "T8 Udendørstemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T9_heater": {
+      "title": {
+        "en": "T9 Heater temperature",
+        "da": "T9 Varmertemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T10_extern": {
+      "title": {
+        "en": "T10 External room temperature",
+        "da": "T10 Eksternt rumtemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T11_water_top": {
+      "title": {
+        "en": "T11 Hot water top temperature",
+        "da": "T11 Varmtvandsbeholder top"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T12_water_bottom": {
+      "title": {
+        "en": "T12 Hot water bottom temperature",
+        "da": "T12 Varmtvandsbeholder bund"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T13_return": {
+      "title": {
+        "en": "T13 EK return temperature",
+        "da": "T13 EK returtemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T14_supply": {
+      "title": {
+        "en": "T14 EK supply temperature",
+        "da": "T14 EK fremløbstemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T15_room": {
+      "title": {
+        "en": "T15 User panel room temperature",
+        "da": "T15 Brugerpanelets rumtemperatur"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    },
+    "insights_dec_number.T16_aux": {
+      "title": {
+        "en": "T16 Aux temperature (sacrificial anode)",
+        "da": "T16 AUX-temperatur (offeranode)"
+      },
+      "units": "°C",
+      "decimals": 2,
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "pair": [
+    {
+      "id": "connection"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}
