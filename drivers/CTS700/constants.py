@@ -58,7 +58,7 @@ CAPABILITIES: Dict[str, Dict[str, Any]] = {
         'type': ValueType.Number,
     },
     'prmUserFanSpeed': {
-        'name': 'fanspeed.user',
+        'name': 'fanspeed',
         'type': ValueType.Number,
         'factor': 1,
     },

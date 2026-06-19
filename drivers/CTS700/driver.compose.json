@@ -10,27 +10,7 @@
     "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
   },
   "class": "heatpump",
-  "capabilities": [
-    "measure_humidity",
-    "measure_temperature.master",
-    "measure_temperature.outdoor",
-    "measure_temperature.supply",
-    "measure_temperature.extract",
-    "measure_temperature.discharge",
-    "measure_temperature.cond",
-    "measure_temperature.evap",
-    "measure_temperature.water_top",
-    "measure_temperature.water_bottom",
-    "measure_temperature.user",
-    "fanspeed.user",
-    "filter_days.inlet",
-    "filter_days.outlet",
-    "operational_state.systemworkmode",
-    "operational_state.external",
-    "operational_state.regulation",
-    "alarm_generic.inlet",
-    "alarm_generic.outlet"
-  ],
+  "capabilities": [],
   "capabilitiesOptions": {
     "measure_humidity": {
       "title": {
@@ -98,18 +78,14 @@
         "da": "Setpoint temperatur"
       }
     },
-    "fanspeed.user": {
+    "fanspeed": {
       "title": {
         "en": "Setpoint fan speed",
         "da": "Setpoint blæser"
       },
       "desc": {
-        "en": "Setpoing fan speed",
+        "en": "Setpoint fan speed",
         "da": "Setpoint blæser"
-      },
-      "units": {
-        "en": "/4",
-        "da": "/4"
       }
     },
     "filter_days.inlet": {

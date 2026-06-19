@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import ipaddress
+import asyncio
 from homey.driver import Driver
 from modbus_api import ModbusApi
 
@@ -27,11 +28,18 @@ class CTS700Driver(Driver):
 
             api = ModbusApi(homey=self.homey, logger=self.log)
             try:
-                await api.connect(
-                    ip_address=data['ipaddress'],
-                    port=int(data['port']),
-                    unit_id=int(data['unitid']),
+                # Protect against a stalled TCP connect; fail fast for the pairing UI
+                await asyncio.wait_for(
+                    api.connect(
+                        ip_address=data['ipaddress'],
+                        port=int(data['port']),
+                        unit_id=int(data['unitid']),
+                    ),
+                    timeout=10,
                 )
+            except asyncio.TimeoutError:
+                self.log('onPair: connection timeout')
+                raise Exception(self.homey.i18n.__('pair.connection_timeout'))
             finally:
                 api.disconnect()
 

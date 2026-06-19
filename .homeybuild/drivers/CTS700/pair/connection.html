@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .logo {
+      width: 160px
+    }
+    .grid_center {
+      text-align: center;
+    }
+    .input_ip_address, .input_tcp_port, .input_unit_id {
+      background-color: #fafafa;
+      font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+      font-size: 14pt;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="homey-header">
+  <div class="grid_center">
+    <img class="logo" src="pair_logo.svg" alt="Nilan"/>
+  </div>
+  <p class="homey-subtitle" data-i18n="pair.modbus.subtitle"></p>
+</header>
+
+<form class="homey-form">
+  <fieldset class="homey-form-fieldset">
+    <div class="homey-form-group">
+      <label class="homey-form-label" for="ipaddress" data-i18n="pair.modbus.ipaddress_label"></label>
+      <div class="input_ip_address">
+        <input class="homey-form-input " id="ipaddress" type="text" maxlength="15">
+      </div>
+      <label class="homey-form-label" for="port" data-i18n="pair.modbus.port_label"></label>
+      <div class="input_tcp_port">
+        <input class="homey-form-input " id="port" type="number" maxlength="5" value="502">
+      </div>
+      <label class="homey-form-label" for="unitid" data-i18n="pair.modbus.unitid_label_cts700"></label>
+      <div class="input_unit_id">
+        <input class="homey-form-input " id="unitid" type="number" maxlength="1" value="1">
+      </div>
+    </div>
+  </fieldset>
+
+  <button class="homey-button-primary-full"
+          id="submit"
+          data-i18n="pair.submit"
+  ></button>
+</form>
+
+<script type="text/javascript">
+  Homey.setTitle(Homey.__('pair.modbus.title'));
+
+  document.getElementById('submit').onclick = (e) => {
+    e.preventDefault();
+    Homey.showLoadingOverlay();
+    const ipaddress = document.getElementById("ipaddress").value;
+    const port = document.getElementById("port").value;
+    const unitid = document.getElementById("unitid").value;
+
+    Homey.emit('connection_details_entered', { ipaddress, port, unitid }, (err, result) => {
+      Homey.hideLoadingOverlay();
+      if (err) {
+        Homey.alert(err, 'error', () => {
+        });
+      }
+    });
+  };
+</script>
+</body>
+</html>
